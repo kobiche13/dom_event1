@@ -1,0 +1,122 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game-field{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    
+    
+}
+
+.game-field_cell{
+    background-image: url(../img/game-field_cell.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: url(../img/cursorUp.png), pointer;    
+}
+
+.mosedown{
+    cursor: url(../img/cursor2.png), pointer;
+}
+
+.btn{
+    display: block;  
+    width: 135px;;
+    height: 36px;
+    border: none;
+    background-image: url(../img/sprite-btn.jpg);
+    background-size: 856px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    cursor: pointer;    
+}
+
+.btn-start{
+    background-position: -35px -25px;
+}
+
+.btn-restart{
+    background-position: -686px -25px;
+}
+
+.goblin{
+    background-image: url(../img/goblin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.header-container{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.header-container__health{ 
+    display: none;
+    width: 233px;
+    height: 38px;
+    background-image: url(../img/health.jpg);
+    background-position: 5px -8px;
+    background-size: 237px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.header-container__score{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+}
+
+.header-container__score-img{
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../img/goblin-score.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-container__score-text{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.gameover-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    background-color: rgba(0, 0, 0, 30%);
+    flex-direction: column;
+}
+
+.gameover-window{
+    display: block;
+    
+}
+
